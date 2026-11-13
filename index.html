@@ -1,0 +1,297 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CampaignAI - AI-powered digital marketing conversion prediction platform">
+    <title>CampaignAI | Marketing Intelligence</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <aside class="sidebar">
+
+    <h2 class="brand">Campaign<span>AI</span></h2>
+
+    <p class="sidebar-label">MAIN MENU</p>
+
+    <nav class="sidebar-nav">
+        <a href="#home">🏠 Home</a>
+        <a href="#analytics">📊 Dashboard</a>
+        <a href="#prediction">🤖 Predict Conversion</a>
+        <a href="#about">ℹ️ About Platform</a>
+    </nav>
+
+    <div class="sidebar-footer">
+        <p>AI Marketing Intelligence</p>
+        <small>© 2026 CampaignAI</small>
+    </div>
+
+</aside>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+
+        <span class="hero-tag">AI POWERED MARKETING INTELLIGENCE</span>
+
+        <h1>
+            Digital Marketing<br>
+            <span>Intelligence Platform</span>
+        </h1>
+
+        <p>
+            Predict customer conversions, understand customer behaviour
+            and make smarter marketing decisions using Artificial Intelligence.
+        </p>
+
+        <a href="#prediction" class="btn">Explore Prediction →</a>
+
+    </section>
+
+    <!-- DASHBOARD -->
+    <section class="dashboard" id="analytics">
+
+        <span class="hero-tag">PERFORMANCE OVERVIEW</span>
+        <h2>Campaign Dashboard</h2>
+
+        <p>Monitor your digital marketing performance.</p>
+
+        <div class="dashboard-cards">
+
+            <div class="card">
+                <h3>Total Campaigns</h3>
+                <p>Campaign Overview</p>
+                <span>Marketing Activity</span>
+            </div>
+
+            <div class="card">
+                <h3>Conversion Rate</h3>
+                <p>Performance Analysis</p>
+                <span>Conversion Insights</span>
+            </div>
+
+            <div class="card">
+                <h3>Customer Engagement</h3>
+                <p>Engagement Insights</p>
+                <span>Customer Behaviour</span>
+            </div>
+
+        </div>
+
+<div class="analytics-panel">
+
+    <div class="analytics-heading">
+        <div>
+            <span class="hero-tag">CAMPAIGN INSIGHTS</span>
+            <h2>Channel Performance</h2>
+            <p>Illustrative campaign performance overview</p>
+        </div>
+        <span class="demo-label">DEMO DATA</span>
+    </div>
+
+    <div class="chart">
+
+        <div class="chart-row">
+            <span>Email</span>
+            <div class="chart-track">
+                <div class="chart-fill" style="width: 78%"></div>
+            </div>
+            <strong>78%</strong>
+        </div>
+
+        <div class="chart-row">
+            <span>Social Media</span>
+            <div class="chart-track">
+                <div class="chart-fill" style="width: 65%"></div>
+            </div>
+            <strong>65%</strong>
+        </div>
+
+        <div class="chart-row">
+            <span>SEO</span>
+            <div class="chart-track">
+                <div class="chart-fill" style="width: 52%"></div>
+            </div>
+            <strong>52%</strong>
+        </div>
+
+        <div class="chart-row">
+            <span>PPC</span>
+            <div class="chart-track">
+                <div class="chart-fill" style="width: 88%"></div>
+            </div>
+            <strong>88%</strong>
+        </div>
+
+        <div class="chart-row">
+            <span>Referral</span>
+            <div class="chart-track">
+                <div class="chart-fill" style="width: 43%"></div>
+            </div>
+            <strong>43%</strong>
+        </div>
+
+    </div>
+</div>
+
+    </section>
+
+    <!-- PREDICTION SECTION -->
+    <section class="prediction" id="prediction">
+
+        <span class="hero-tag">MACHINE LEARNING</span>
+
+        <h2>Campaign Conversion Prediction</h2>
+
+        <p>
+            Enter customer information below to predict
+            the possibility of a successful conversion.
+        </p>
+
+        <form id="predictionForm">
+
+            <label>
+                Customer Age
+                <input type="number" id="Age" placeholder="Example: 25" required>
+            </label>
+
+            <label>
+                Annual Income ($)
+                <input type="number" id="Income" placeholder="Example: 50000" required>
+            </label>
+
+            <label>
+                Advertisement Spend
+                <input type="number" id="AdSpend" placeholder="Example: 1200" required>
+            </label>
+
+            <label>
+                Click Through Rate
+                <input type="number" step="any" id="ClickThroughRate" placeholder="Example: 0.08" required>
+            </label>
+
+            <label>
+                Conversion Rate
+                <input type="number" step="any" id="ConversionRate" placeholder="Example: 0.05" required>
+            </label>
+
+            <label>
+                Website Visits
+                <input type="number" id="WebsiteVisits" placeholder="Example: 15" required>
+            </label>
+
+            <label>
+                Pages Per Visit
+                <input type="number" step="any" id="PagesPerVisit" placeholder="Example: 4" required>
+            </label>
+
+            <label>
+                Time On Site (minutes)
+                <input type="number" step="any" id="TimeOnSite" placeholder="Example: 6" required>
+            </label>
+
+            <label>
+                Social Shares
+                <input type="number" id="SocialShares" placeholder="Example: 10" required>
+            </label>
+
+            <label>
+                Email Opens
+                <input type="number" id="EmailOpens" placeholder="Example: 8" required>
+            </label>
+
+            <label>
+                Email Clicks
+                <input type="number" id="EmailClicks" placeholder="Example: 5" required>
+            </label>
+
+            <label>
+                Previous Purchases
+                <input type="number" id="PreviousPurchases" placeholder="Example: 3" required>
+            </label>
+
+            <label>
+                Loyalty Points
+                <input type="number" id="LoyaltyPoints" placeholder="Example: 500" required>
+            </label>
+
+            <label>
+                Gender
+                <select id="Gender" required>
+                    <option value="">Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </label>
+
+            <label>
+                Campaign Channel
+                <select id="CampaignChannel" required>
+                    <option value="">Select Campaign Channel</option>
+                    <option value="Email">Email</option>
+                    <option value="Social Media">Social Media</option>
+                    <option value="SEO">SEO</option>
+                    <option value="PPC">PPC</option>
+                    <option value="Referral">Referral</option>
+                </select>
+            </label>
+
+            <label>
+                Campaign Type
+                <select id="CampaignType" required>
+                    <option value="">Select Campaign Type</option>
+                    <option value="Awareness">Awareness</option>
+                    <option value="Consideration">Consideration</option>
+                    <option value="Conversion">Conversion</option>
+                    <option value="Retention">Retention</option>
+                </select>
+            </label>
+
+            <button type="submit">Predict Conversion →</button>
+
+        </form>
+
+        <!-- AI PREDICTION RESULT -->
+        <div id="result" aria-live="polite"></div>
+
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+
+        <span class="hero-tag">ABOUT OUR PLATFORM</span>
+
+        <h2>About CampaignAI</h2>
+
+        <p>
+            CampaignAI is an intelligent digital marketing campaign
+            conversion prediction platform powered by machine learning.
+            It analyses customer demographics, engagement and campaign
+            information to predict conversion potential and support
+            data-driven marketing decisions.
+        </p>
+
+<div class="about-details">
+    <h3>Technology Stack</h3>
+    <p><strong>Frontend:</strong> HTML, CSS, JavaScript</p>
+    <p><strong>Backend:</strong> Python Flask</p>
+    <p><strong>Machine Learning:</strong> Scikit-learn</p>
+    <p><strong>Model:</strong> Trained Classification Model</p>
+    <p><strong>Output:</strong> Conversion Prediction and Probability</p>
+</div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 CampaignAI | Digital Marketing Intelligence</p>
+        <p>Powered by Artificial Intelligence & Machine Learning</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
